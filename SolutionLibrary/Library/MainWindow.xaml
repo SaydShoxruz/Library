@@ -8,5 +8,84 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
 
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+
+        </Grid.RowDefinitions>
+
+        <Button
+             Grid.Row="1"
+             Background="Orange"
+             Height="40"
+             Width="130"
+             BorderBrush="White"
+             BorderThickness="3"
+             FontSize="18"
+             Foreground="White"
+             Content=" Log in "
+             Cursor="Hand"
+             FontStyle="Italic"
+             VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+             Margin="0 0 0 130"
+             Click="LognInButton"/>
+
+
+        <Button
+             Grid.Row="0"
+             Background="Orange"
+             Height="40"
+             Width="130"
+             BorderBrush="White"
+             BorderThickness="3"
+             FontSize="18"
+             Foreground="White"
+             Content=" Sign in "
+             Cursor="Hand"
+             FontStyle="Italic"
+             VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+             Margin=" 100 130 100 0"
+             Click="SignInButton"/>
+
+
+
+        <Button
+             Grid.Row="1"
+             Background="pink"
+             Height="30"
+             Width="100"
+             BorderBrush="White"
+             BorderThickness="2"
+             FontSize="18"
+             Foreground="White"
+             Content=" Skip "
+             Cursor="Hand"
+             FontStyle="Italic"
+             VerticalAlignment="Top"
+             HorizontalAlignment="Left"
+             Margin="600,170,0,0" 
+             Click="SkipButton"/>
+
+        <TextBlock
+             Text="Mashennik's Library"
+             Grid.Row="0"
+             Background="DarkOrange"
+             Height="30"
+             Width="160"
+             FontSize="18"
+             Foreground="White"
+             Cursor="Hand"
+             FontStyle="Italic"
+             VerticalAlignment="Center"
+             HorizontalAlignment="Center"
+             Margin="0 50 550 120"
+            />
+
+
+
+
+
     </Grid>
 </Window>

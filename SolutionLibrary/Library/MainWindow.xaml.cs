@@ -20,5 +20,22 @@ namespace Library
         {
             InitializeComponent();
         }
+
+        
+
+        private void SkipButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SignInButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LognInButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
