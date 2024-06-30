@@ -38,10 +38,10 @@ namespace Library.Views
             birthDatePicker.SelectedDate = new DateTime(2000, 1, 1);
         }
 
-        private void saveButton_Clicked(object sender, RoutedEventArgs e)
+        private void SaveButton_Clicked(object sender, RoutedEventArgs e)
         {
             string username = userNameTextBox.Text;
-            string password = passwordTextBox.Text;
+            string password = passwordTextBox.Password;
             string fullname = fullNameTextBox.Text;
             string phoneNumber = phoneNumberTextBox.Text;
             string address = addressTextBox.Text;
@@ -106,7 +106,7 @@ namespace Library.Views
                 MessageBoxButton.OK,
                 MessageBoxImage.Information);
         }
-        private void logInButton_Clicked(object sender, RoutedEventArgs e)
+        private void LogInButton_Clicked(object sender, RoutedEventArgs e)
         {
             ///botta dilwoda yozgan kodlarini ulab qoyamz
         }

@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="ReaderWindow" Height="1080" Width="1920">
     <Grid>
-        <Image Source="C:\Users\Shokhruz\Desktop\imresizer-1719607846103.jpg"/>
+        <Image Source="C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Views\Required images\imresizer-1719607846103.jpg"/>
         <DockPanel>
 
             <Menu DockPanel.Dock="Top" Height="50" Background="#993333" VerticalAlignment="Top">
@@ -81,7 +81,7 @@
                         Background="#993333"
                         Click="AccauntButton_Clicked">
                     <Image 
-                        Source="C:\Users\Shokhruz\Desktop\moshennichestvo2.jpg">
+                        Source="C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Views\Required images\moshennichestvo2.jpg">
                         <Image.Resources>
                             <Style TargetType="Border">
                                 <Setter Property="CornerRadius" Value="20"/>

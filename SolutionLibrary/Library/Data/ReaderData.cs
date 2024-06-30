@@ -6,7 +6,7 @@ namespace Library.Data;
 
 public class ReaderData
 {
-    private const string PATH = @"C:\Users\user\Desktop\Library\SolutionLibrary\Library\Data\Readers.json";
+    private const string PATH = @"C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Data\Readers.json";
 
     private static JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions()
     {

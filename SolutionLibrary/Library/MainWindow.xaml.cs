@@ -20,8 +20,8 @@ namespace Library
         public MainWindow()
         {
             InitializeComponent();
-            ReaderWindow readerWindow = new ReaderWindow();
-            readerWindow.Show();
+            SignInDialog logInDialog = new SignInDialog();
+            logInDialog.ShowDialog();
         }
     }
 }
