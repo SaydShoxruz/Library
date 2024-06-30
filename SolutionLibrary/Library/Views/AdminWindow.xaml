@@ -5,8 +5,97 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library.Views"
         mc:Ignorable="d"
-        Title="AdminWindow" Height="450" Width="800">
+        Title="AdminWindow" Height="600" Width="1000">
     <Grid>
-        
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="3*"/>
+        </Grid.RowDefinitions>
+
+        <TextBlock
+            Grid.Row="0"
+
+            Height="100"
+            TextAlignment="Center"
+            Margin="0 0 700 0"
+            Padding="16"
+            Background="AntiqueWhite"
+            Width="250" RenderTransformOrigin="0.502,0.524">
+        <Run FontFamily="Segoe Print" FontSize="20.666666666666666" Text="Mashennik's"/>
+        <LineBreak/>
+        <Run FontFamily="Segoe Print" FontSize="20.666666666666666" Text="Library"/>
+
+        </TextBlock>
+
+
+
+        <Button
+            Grid.Row="0"
+            
+            Width="80" 
+            Height="30" 
+            Background="AntiqueWhite"
+            FontFamily="Arial Black"
+            Content="LOG OUT"
+            BorderThickness="2"
+            FontSize="14"
+            Foreground="Black" 
+            BorderBrush="Blue" 
+            VerticalAlignment="Center" 
+            HorizontalAlignment="Right" 
+            Margin="0 0 10 60"
+            >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <TextBox
+            x:Name="searchTextBox"
+            BorderBrush="HotPink"
+            BorderThickness="3"
+            Background="Azure"
+            Foreground="Black"
+            Height="60"
+            Width="370"
+            Margin="0 0 25 0"
+            FontSize="18"
+            FontFamily="Segoe Print"
+            VerticalContentAlignment="Center"
+            HorizontalContentAlignment="Center"
+            >
+            <TextBox.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="20"/>
+                </Style>
+            </TextBox.Resources>
+        </TextBox>
+
+
+        <Button
+            BorderBrush="HotPink"
+            BorderThickness="3"
+            Content="Search"
+            FontFamily="Segoe Print"
+            FontSize="20"
+            Width="160"
+            Height="60"
+            HorizontalAlignment="Center"
+            Margin="550 0 0 0"
+            >
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="30"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
+
+
+
+
     </Grid>
 </Window>

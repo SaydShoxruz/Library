@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library.Views"
         mc:Ignorable="d"
-        Title="SignInDialog" Height="450" Width="400">
+        Title="SignInDialog" Height="450" Width="430">
     <Grid>
         <!--<Image Source=""/>-->
         <Grid.RowDefinitions>
@@ -151,6 +151,7 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="18"
+          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
@@ -173,6 +174,7 @@
             Height="40"
             Background="AntiqueWhite"
             FontSize="18"
+            FontFamily="Segoe Print"
             TextAlignment="Center"
             Padding="6"
             Width="240"
@@ -198,6 +200,7 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="18"
+          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
@@ -211,16 +214,22 @@
         </StackPanel>
 
         <StackPanel
-      Grid.Row="6" 
-      Margin="0">
+            Grid.Row="6" 
+            Margin="0">
 
             <DatePicker 
-                x:Name="birthDatePicker" 
-                Margin="138 4 8 0" 
-                Height="40"
-                Background="AntiqueWhite" 
-                FontSize="15" 
-                Padding="8" >
+                 x:Name="birthDatePicker" 
+                 Margin="138 4 8 0" 
+                 Height="40"
+                 Width="240"
+                 Background="AntiqueWhite" 
+                 FontSize="15" 
+                 Padding="8" >
+                <DatePicker.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </DatePicker.Resources>
             </DatePicker>
 
         </StackPanel>
@@ -234,6 +243,7 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="18"
+          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
@@ -256,6 +266,7 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="18"
+          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
@@ -293,12 +304,19 @@
 
             <ComboBox 
                 x:Name="genderComboBox"
-                Margin="138 4 8 0" 
+                Margin="138 4 10 0" 
                 Height="40" 
                 Width="240"
                 Background="AntiqueWhite" 
                 FontSize="15"  
-                Padding="6" />
+                Padding="6" >
+
+                <ComboBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </ComboBox.Resources>
+            </ComboBox>
 
 
 
@@ -318,9 +336,9 @@
 
         <Button
             Grid.Row="8"
-            Height="30"
+            Height="35"
             Content="Log In"
-            Width="100"
+            Width="120"
             FontSize="17"
             Margin="270 0 0 0"
             Background="AntiqueWhite" Click="logInButton_Clicked"/>

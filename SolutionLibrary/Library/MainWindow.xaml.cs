@@ -25,8 +25,10 @@ namespace Library
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            SignInDialog signInDialog = new SignInDialog();
-            signInDialog.ShowDialog();
+            //SignInDialog signInDialog = new SignInDialog();
+            //signInDialog.ShowDialog();
+            AdminWindow adminWindow = new AdminWindow();
+            adminWindow.Show();
         }
     }
 }

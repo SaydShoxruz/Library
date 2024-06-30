@@ -23,5 +23,15 @@ namespace Library.Views
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void searchTextBox_DragEnter(object sender, DragEventArgs e)
+        {
+
+        }
     }
 }
