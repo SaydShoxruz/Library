@@ -1,1 +1,11 @@
-[]
+[
+  {
+    "username": "bilol",
+    "password": "12345",
+    "full_name": "Makhamadjonov",
+    "phone_number": "\u002B998932884321",
+    "address": "Nazarbek",
+    "gender": 0,
+    "birth_day": "2004-05-23T00:00:00"
+  }
+]

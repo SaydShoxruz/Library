@@ -1,4 +1,5 @@
-﻿using System.Text;
+﻿using Library.Views;
+using System.Text;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -19,6 +20,13 @@ namespace Library
         public MainWindow()
         {
             InitializeComponent();
+
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            SignInDialog signInDialog = new SignInDialog();
+            signInDialog.ShowDialog();
         }
     }
 }
