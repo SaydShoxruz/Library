@@ -1,0 +1,329 @@
+﻿<Window x:Class="Library.Views.SignInDialog"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Library.Views"
+        mc:Ignorable="d"
+        Title="SignInDialog" Height="450" Width="400">
+    <Grid>
+        <!--<Image Source=""/>-->
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <StackPanel
+        Grid.Row="0"
+        Margin="0">
+
+            <TextBlock
+            Height="48"
+            TextAlignment="Center"
+            Margin="0 0 240 0"
+            Padding="1"
+            Width="120"
+            Background="Yellow"><Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Mashennik's"/><LineBreak/><Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Library"/>
+
+            </TextBlock>
+
+            <TextBlock
+            Height="25"
+            TextAlignment="Center"
+            Margin="140 -45 0 0"
+            Background="AntiqueWhite"
+            Width="80">
+            <Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Sign In"/>
+
+            </TextBlock>
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="1"
+        Margin="0">
+
+            <TextBlock 
+            Height="46"
+            TextAlignment="Center"
+            Margin="0 0 250 0"
+            Padding="12"
+            FontSize="20"
+            Width="100">
+            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="UserName"/>
+            </TextBlock>
+
+        </StackPanel>
+        
+        <StackPanel
+        Grid.Row="2"
+        Margin="0">
+
+            <TextBlock 
+            Height="46"
+            TextAlignment="Center"
+            Margin="0 0 250 0"
+            Padding="12"
+            FontSize="20"
+            Width="100">
+            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Password"/>
+            </TextBlock>
+
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="3"
+        Margin="0">
+
+            <TextBlock 
+            Height="50"
+            TextAlignment="Center"
+            Margin="0 0 250 0"
+            Padding="12"
+            FontSize="20"
+            Width="100">
+            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="FullName"/>
+            </TextBlock>
+
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="4"
+        Margin="0">
+
+            <TextBlock 
+                Height="46"
+                TextAlignment="Center"
+                Margin="0 0 250 0"
+                Padding="12"
+                FontSize="20"
+                Width="130">
+                <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Phone Number"/>
+            </TextBlock>
+
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="5"
+        Margin="0">
+
+            <TextBlock 
+            Height="50"
+            TextAlignment="Center"
+            Margin="0 0 250 0"
+            Padding="12"
+            FontSize="20"
+            Width="100" RenderTransformOrigin="0.528,0.155">
+            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Address"/>
+            </TextBlock>
+
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="6"
+        Margin="0">
+
+            <TextBlock 
+                Height="47"
+                TextAlignment="Center"
+                Margin="0 0 250 0"
+                Padding="12"
+                FontSize="20"
+                Width="100">
+                <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Birthday"/>
+            </TextBlock>
+            
+
+        </StackPanel>
+
+        <StackPanel
+      Grid.Row="3" 
+      Margin="0">
+
+            <TextBox 
+          x:Name="fullNameTextBox"
+          Height="40"
+          Background="AntiqueWhite"
+          FontSize="18"
+          TextAlignment="Center"
+          Padding="6"
+          Width="240"
+          Margin="130 5 0 30">
+
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </StackPanel>
+
+        <StackPanel
+        Grid.Row="4" 
+        Margin="0">
+
+            <TextBox 
+            x:Name="phoneNumberTextBox"
+            Height="40"
+            Background="AntiqueWhite"
+            FontSize="18"
+            TextAlignment="Center"
+            Padding="6"
+            Width="240"
+            Margin="130 5 0 30">
+
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+            
+
+            
+        </StackPanel>
+
+        <StackPanel
+      Grid.Row="5" 
+      Margin="0">
+
+            <TextBox 
+          x:Name="addressTextBox"
+          Height="40"
+          Background="AntiqueWhite"
+          FontSize="18"
+          TextAlignment="Center"
+          Padding="6"
+          Width="240"
+          Margin="130 5 0 30">
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </StackPanel>
+
+        <StackPanel
+      Grid.Row="6" 
+      Margin="0">
+
+            <DatePicker 
+                x:Name="birthDatePicker" 
+                Margin="138 4 8 0" 
+                Height="40"
+                Background="AntiqueWhite" 
+                FontSize="15" 
+                Padding="8" >
+            </DatePicker>
+
+        </StackPanel>
+
+        <StackPanel
+      Grid.Row="1" 
+      Margin="0">
+
+            <TextBox 
+          x:Name="userNameTextBox"
+          Height="40"
+          Background="AntiqueWhite"
+          FontSize="18"
+          TextAlignment="Center"
+          Padding="6"
+          Width="240"
+          Margin="130 4 0 30">
+
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </StackPanel>
+        
+        <StackPanel
+      Grid.Row="2" 
+      Margin="0">
+
+            <TextBox 
+          x:Name="passwordTextBox"
+          Height="40"
+          Background="AntiqueWhite"
+          FontSize="18"
+          TextAlignment="Center"
+          Padding="6"
+          Width="240"
+          Margin="130 4 0 30">
+
+                <TextBox.Resources>
+                    <Style TargetType="Border">
+                        <Setter Property="CornerRadius" Value="20"/>
+                    </Style>
+                </TextBox.Resources>
+            </TextBox>
+        </StackPanel>
+
+
+
+        <StackPanel
+        Grid.Row="7"
+        Margin="0">
+
+            <TextBlock 
+            Height="50"
+            TextAlignment="Center"
+            Margin="0 0 250 0"
+            Padding="12"
+            FontSize="20"
+            Width="100" RenderTransformOrigin="0.502,0.524">
+            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Gender"/>
+            </TextBlock>
+
+        </StackPanel>
+
+        <StackPanel
+            Grid.Row="7"
+            Margin="0">
+
+            <ComboBox 
+                x:Name="genderComboBox"
+                Margin="138 4 8 0" 
+                Height="40" 
+                Width="240"
+                Background="AntiqueWhite" 
+                FontSize="15"  
+                Padding="6" />
+
+
+
+        </StackPanel>
+
+        <Button 
+            Grid.Row="8"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Height="35"
+            Content="Save"
+            FontSize="18"
+            Width="120"
+            Margin="0 0 0 0"
+            Background="AntiqueWhite" Click="saveButton_Clicked"
+            />
+
+        <Button
+            Grid.Row="8"
+            Height="30"
+            Content="Log In"
+            Width="100"
+            FontSize="17"
+            Margin="270 0 0 0"
+            Background="AntiqueWhite" Click="logInButton_Clicked"/>
+
+    </Grid>
+</Window>
