@@ -23,5 +23,22 @@ namespace Library
             ReaderWindow readerWindow = new ReaderWindow();
             readerWindow.Show();
         }
+
+        
+
+        private void SkipButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void SignInButton(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void LognInButton(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
