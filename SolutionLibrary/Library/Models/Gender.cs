@@ -1,6 +1,8 @@
 ﻿namespace Library.Models;
 
-class Gender
+public enum Gender
 {
-
+    Male,
+    Female,
+    UnKnown
 }
