@@ -7,5 +7,14 @@
     "address": "Nazarbek",
     "gender": 0,
     "birth_day": "2004-05-23T00:00:00"
+  },
+  {
+    "username": "123",
+    "password": "123",
+    "full_name": "1234",
+    "phone_number": "12345",
+    "address": "123456",
+    "gender": 0,
+    "birth_day": "2003-10-02T00:00:00"
   }
 ]

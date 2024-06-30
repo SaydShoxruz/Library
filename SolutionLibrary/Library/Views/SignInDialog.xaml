@@ -30,7 +30,10 @@
             Margin="0 0 240 0"
             Padding="1"
             Width="120"
-            Background="Yellow"><Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Mashennik's"/><LineBreak/><Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Library"/>
+            Background="Yellow">
+                <Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Mashennik's"/>
+                <LineBreak/>
+                <Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Library"/>
 
             </TextBlock>
 
@@ -251,22 +254,21 @@
       Grid.Row="2" 
       Margin="0">
 
-            <TextBox 
+            <PasswordBox 
           x:Name="passwordTextBox"
           Height="40"
           Background="AntiqueWhite"
           FontSize="18"
-          TextAlignment="Center"
           Padding="6"
           Width="240"
           Margin="130 4 0 30">
 
-                <TextBox.Resources>
+                <PasswordBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
                     </Style>
-                </TextBox.Resources>
-            </TextBox>
+                </PasswordBox.Resources>
+            </PasswordBox>
         </StackPanel>
 
 
@@ -313,7 +315,7 @@
             FontSize="18"
             Width="120"
             Margin="0 0 0 0"
-            Background="AntiqueWhite" Click="saveButton_Clicked"
+            Background="AntiqueWhite" Click="SaveButton_Clicked"
             />
 
         <Button
@@ -323,7 +325,7 @@
             Width="100"
             FontSize="17"
             Margin="270 0 0 0"
-            Background="AntiqueWhite" Click="logInButton_Clicked"/>
+            Background="AntiqueWhite" Click="LogInButton_Clicked"/>
 
     </Grid>
 </Window>
