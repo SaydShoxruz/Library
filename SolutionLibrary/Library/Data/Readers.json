@@ -7,5 +7,14 @@
     "address": "Nazarbek",
     "gender": 0,
     "birth_day": "2004-05-23T00:00:00"
+  },
+  {
+    "username": "xojaaka",
+    "password": "123456",
+    "full_name": "xoji aka",
+    "phone_number": "993450706",
+    "address": "andijon",
+    "gender": 0,
+    "birth_day": "2005-07-25T00:00:00"
   }
 ]

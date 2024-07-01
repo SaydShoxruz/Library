@@ -18,11 +18,17 @@
             <RowDefinition/>
             <RowDefinition/>
             <RowDefinition/>
+            
         </Grid.RowDefinitions>
 
         <StackPanel
+            Grid.Row="8"
+            Background="FloralWhite"/>
+
+
+        <StackPanel
         Grid.Row="0"
-        Margin="0">
+        Background="FloralWhite">
 
             <TextBlock
             Height="48"
@@ -35,19 +41,19 @@
             </TextBlock>
 
             <TextBlock
-            Height="25"
-            TextAlignment="Center"
-            Margin="140 -45 0 0"
-            Background="AntiqueWhite"
-            Width="80">
-            <Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Sign In"/>
+                Height="25"
+                TextAlignment="Center"
+                Margin="140 -45 0 0"
+                Background="AntiqueWhite"
+                Width="80">
+                <Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Sign In"/>
 
             </TextBlock>
         </StackPanel>
 
         <StackPanel
         Grid.Row="1"
-        Margin="0">
+        Background="FloralWhite">
 
             <TextBlock 
             Height="46"
@@ -63,7 +69,7 @@
         
         <StackPanel
         Grid.Row="2"
-        Margin="0">
+        Background="FloralWhite">
 
             <TextBlock 
             Height="46"
@@ -79,7 +85,7 @@
 
         <StackPanel
         Grid.Row="3"
-        Margin="0">
+         Background="FloralWhite">
 
             <TextBlock 
             Height="50"
@@ -95,7 +101,8 @@
 
         <StackPanel
         Grid.Row="4"
-        Margin="0">
+        Margin="0"
+            Background="FloralWhite">
 
             <TextBlock 
                 Height="46"
@@ -111,7 +118,8 @@
 
         <StackPanel
         Grid.Row="5"
-        Margin="0">
+        Margin="0"
+            Background="FloralWhite">
 
             <TextBlock 
             Height="50"
@@ -127,7 +135,8 @@
 
         <StackPanel
         Grid.Row="6"
-        Margin="0">
+        Margin="0"
+            Background="FloralWhite">
 
             <TextBlock 
                 Height="47"
@@ -150,7 +159,7 @@
           x:Name="fullNameTextBox"
           Height="40"
           Background="AntiqueWhite"
-          FontSize="18"
+          FontSize="16"
           FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
@@ -167,13 +176,13 @@
 
         <StackPanel
         Grid.Row="4" 
-        Margin="0">
+        >
 
             <TextBox 
             x:Name="phoneNumberTextBox"
             Height="40"
             Background="AntiqueWhite"
-            FontSize="18"
+            FontSize="16"
             FontFamily="Segoe Print"
             TextAlignment="Center"
             Padding="6"
@@ -192,14 +201,15 @@
         </StackPanel>
 
         <StackPanel
-      Grid.Row="5" 
-      Margin="0">
+        Grid.Row="5" 
+        Margin="0"
+            >
 
             <TextBox 
           x:Name="addressTextBox"
           Height="40"
           Background="AntiqueWhite"
-          FontSize="18"
+          FontSize="16"
           FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
@@ -215,7 +225,7 @@
 
         <StackPanel
             Grid.Row="6" 
-            Margin="0">
+            >
 
             <DatePicker 
                  x:Name="birthDatePicker" 
@@ -242,7 +252,7 @@
           x:Name="userNameTextBox"
           Height="40"
           Background="AntiqueWhite"
-          FontSize="18"
+          FontSize="16"
           FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
@@ -258,19 +268,19 @@
         </StackPanel>
         
         <StackPanel
-      Grid.Row="2" 
-      Margin="0">
+            Grid.Row="2" 
+            Margin="0">
 
             <TextBox 
-          x:Name="passwordTextBox"
-          Height="40"
-          Background="AntiqueWhite"
-          FontSize="18"
-          FontFamily="Segoe Print"
-          TextAlignment="Center"
-          Padding="6"
-          Width="240"
-          Margin="130 4 0 30">
+                x:Name="passwordTextBox"
+                Height="40"
+                Background="AntiqueWhite"
+                FontSize="16"
+                FontFamily="Segoe Print"
+                TextAlignment="Center"
+                Padding="6"
+                Width="240"
+                Margin="130 4 0 30">
 
                 <TextBox.Resources>
                     <Style TargetType="Border">
@@ -284,7 +294,8 @@
 
         <StackPanel
         Grid.Row="7"
-        Margin="0">
+        Margin="0"
+            Background="FloralWhite">
 
             <TextBlock 
             Height="50"
@@ -300,7 +311,7 @@
 
         <StackPanel
             Grid.Row="7"
-            Margin="0">
+            >
 
             <ComboBox 
                 x:Name="genderComboBox"
@@ -328,20 +339,37 @@
             HorizontalAlignment="Center"
             Height="35"
             Content="Save"
+            TextBlock.FontFamily="Segoe Print"
             FontSize="18"
             Width="120"
             Margin="0 0 0 0"
-            Background="AntiqueWhite" Click="saveButton_Clicked"
-            />
+            Background="AntiqueWhite" Click="saveButton_Clicked">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+
 
         <Button
             Grid.Row="8"
             Height="35"
             Content="Log In"
+            TextBlock.FontFamily="Segoe Print"
             Width="120"
             FontSize="17"
             Margin="270 0 0 0"
-            Background="AntiqueWhite" Click="logInButton_Clicked"/>
+            Background="AntiqueWhite" Click="logInButton_Clicked">
+
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="15"/>
+                </Style>
+            </Button.Resources>
+        </Button>
 
     </Grid>
 </Window>
