@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Library.Data;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -22,6 +23,14 @@ namespace Library.Views
         public AdminWindow()
         {
             InitializeComponent();
+            adminDataGrid.ItemsSource = ReaderBooksData.ReadReaderBooksFromFile();
+        }
+
+        private void LogOutButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
         }
     }
 }

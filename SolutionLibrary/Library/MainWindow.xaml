@@ -5,8 +5,71 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Library"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="400" WindowStyle="SingleBorderWindow">
+    <Grid>
+        <Image Source="C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Views\Required images\imresizer-1719607846103.jpg"
+               Stretch="UniformToFill"/>
+        <TextBlock
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="10 0 0 0"
+            Foreground="AntiqueWhite"
+            Background="#993333">
+            <Run FontFamily="Segoe Print" FontSize="20" Text=" Mashennik's Library "/>
+        </TextBlock>
         
-        
+        <Button
+            Width="150"
+            Height="50"
+            Background="AntiqueWhite"
+            BorderBrush="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 0 0 100"
+            Content="Sign in"
+            FontSize="23"
+            Click="SignInButton_Clicked">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="17"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button
+            Width="150"
+            Height="50"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 100 0 0"
+            Content="Login"
+            Background="AntiqueWhite"
+            BorderBrush="Black"
+            FontSize="23"
+            Click="LogInButton_Clicked">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="17"/>
+                </Style>
+            </Button.Resources>
+        </Button>
+
+        <Button
+            Width="80"
+            Height="30"
+            Content="Skip"
+            HorizontalAlignment="Right"
+            VerticalAlignment="Bottom"
+            Background="AntiqueWhite"
+            BorderBrush="Black"
+            Margin="0 0 10 10"
+            FontSize="15"
+            Click="SkipButton_Clicked">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

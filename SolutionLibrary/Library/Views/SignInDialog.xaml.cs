@@ -105,10 +105,9 @@ namespace Library.Views
                 "Information",
                 MessageBoxButton.OK,
                 MessageBoxImage.Information);
-        }
-        private void LogInButton_Clicked(object sender, RoutedEventArgs e)
-        {
-            ///botta dilwoda yozgan kodlarini ulab qoyamz
+            LogInDialog logInDialog = new LogInDialog();
+            this.Close();
+            logInDialog.ShowDialog();
         }
     }
 }

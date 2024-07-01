@@ -16,5 +16,23 @@
     "address": "123456",
     "gender": 0,
     "birth_day": "2003-10-02T00:00:00"
+  },
+  {
+    "username": "mashennik",
+    "password": "mashennik",
+    "full_name": "Mashennikov Mashennik",
+    "phone_number": "\u002B998881752200",
+    "address": "Mashennik",
+    "gender": 2,
+    "birth_day": "2000-01-01T00:00:00"
+  },
+  {
+    "username": "shoxruz",
+    "password": "saydshox",
+    "full_name": "Saydiganiyev Shoxruz",
+    "phone_number": "\u002B998881752200",
+    "address": "Mirzo Ulugbek tumani, massiv Humoyun",
+    "gender": 0,
+    "birth_day": "2005-03-26T00:00:00"
   }
 ]

@@ -7,6 +7,36 @@
         mc:Ignorable="d"
         Title="AdminWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Views\Required images\imresizer-1719607846103.jpg"
+               Stretch="UniformToFill"/>
+        <Grid>
+            
+        <DataGrid
+            x:Name="adminDataGrid"
+            Margin="10 100 10 10"
+            Background="AntiqueWhite"
+            />
+        <Grid.Style>
+            <Style TargetType="Grid">
+                <Setter Property="Opacity" Value="0.9"/>
+            </Style>
+        </Grid.Style>
+        </Grid>
+        <Button
+            Width="100"
+            Height="40"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left"
+            Margin="10 30 0 0"
+            Content="Log out"
+            FontSize="18"
+            Background="AntiqueWhite"
+            Click="LogOutButton_Clicked">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="12"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

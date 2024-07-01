@@ -17,28 +17,32 @@ namespace Library
     /// </summary>
     public partial class MainWindow : Window
     {
+        public bool IsSignIn = true;
         public MainWindow()
         {
             InitializeComponent();
-            SignInDialog logInDialog = new SignInDialog();
+        }
+
+        private void SignInButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            SignInDialog signInDialog = new SignInDialog();
+            this.Close();
+            signInDialog.ShowDialog();
+        }
+
+        private void LogInButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            LogInDialog logInDialog = new LogInDialog();
+            this.Close();
             logInDialog.ShowDialog();
         }
 
-        
-
-        private void SkipButton(object sender, RoutedEventArgs e)
+        private void SkipButton_Clicked(object sender, RoutedEventArgs e)
         {
-
-        }
-
-        private void SignInButton(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void LognInButton(object sender, RoutedEventArgs e)
-        {
-
+            IsSignIn = false;
+            ReaderWindow readerWindow = new ReaderWindow(IsSignIn);
+            this.Close();
+            readerWindow.Show();
         }
     }
 }

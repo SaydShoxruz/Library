@@ -7,6 +7,30 @@
         mc:Ignorable="d"
         Title="AboutLibraryWindow" Height="450" Width="800">
     <Grid>
-        
+        <Image Source="C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Views\Required images\imresizer-1719607846103.jpg"
+               Stretch="UniformToFill"/>
+        <TextBlock
+            Text="Mashennik's Library is a mythical place celebrated for its enchanting collection and mysterious aura. Nestled in a secluded corner of an ancient city, it is steeped in legends and captivating tales. Here are some fascinating aspects of Mashennik's Library:"/>
+
+        <TextBlock
+            Text="1. Origin: Founded by the enigmatic scholar Mashennik, renowned for his studies in alchemy and ancient wisdom, the library has a rich and intriguing history.
+
+            2. Collection: The library houses rare and unique books, manuscripts, and scrolls. Many of these contain forgotten knowledge and ancient spells, making it a treasure trove for seekers of wisdom.
+
+            3. Architecture: The library is an architectural marvel, featuring Gothic-style high arches, stained glass windows, and narrow corridors. Its interior exudes grandeur and a mystical ambiance.
+
+            4. Secrets: It's said that the library is full of hidden rooms, secret passages, and clever traps. Only a few can navigate their way to the most precious tomes.
+
+            5. Guardianship: The library is protected by magical guardians, and legends suggest that Mashennik himself cast spells to safeguard his collection.
+
+            6. Visitors: Only the chosen few are granted access. Those with a pure heart and a quest for knowledge find answers to their deepest questions here.
+
+            7. Loan Policy: When borrowing a book from the library, there is a 10-day return period. This time is considered sufficient to study the rare knowledge without allowing it to leave the library for too long.
+
+            Mashennik's Library remains an enigmatic beacon of knowledge, its true contents and purpose shrouded in positive intrigue and wonder."
+            Background="AntiqueWhite"
+            TextWrapping="Wrap">
+            
+        </TextBlock>
     </Grid>
 </Window>

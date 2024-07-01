@@ -7,6 +7,82 @@
         mc:Ignorable="d"
         Title="LogInDialog" Height="450" Width="400">
     <Grid>
-        
+
+        <Image Source="C:\Users\Shokhruz\Desktop\Library\SolutionLibrary\Library\Views\Required images\imresizer-1719607846103.jpg"
+               Stretch="UniformToFill"/>
+        <TextBlock
+            HorizontalAlignment="Left"
+            VerticalAlignment="Top"
+            Margin="10 0 0 0"
+            Foreground="AntiqueWhite"
+            Background="#993333">
+            <Run FontFamily="Segoe Print" FontSize="20" Text=" Mashennik's Library "/>
+        </TextBlock>
+
+
+
+        <TextBlock
+            Foreground="Black"
+            Text=" Username "
+            Width="115"
+            Height="40"
+            Background="#993333"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 0 0 170"
+            FontSize="23">
+            </TextBlock>
+
+        <TextBox
+            x:Name="usernameTextBox"
+            Width="220"
+            Height="40"
+            Background="AntiqueWhite"
+            BorderBrush="Black"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 0 0 100"
+            FontSize="23"/>
+
+
+        <TextBlock
+            Text=" Password "
+            Width="115"
+            Height="40"
+            Background="#993333"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 30 0 0"
+            FontSize="23"/>
+
+
+        <PasswordBox
+            x:Name="passwordBox"
+            Width="220"
+            Height="40"
+            VerticalAlignment="Center"
+            HorizontalAlignment="Center"
+            Margin="0 100 0 0"
+            Background="AntiqueWhite"
+            BorderBrush="Black"
+            FontSize="23"/>
+
+
+        <Button
+            Background="AntiqueWhite"
+            Width="80"
+            Height="30"
+            Content="Next"
+            FontSize="18"
+            Margin="0 0 10 10"
+            VerticalAlignment="Bottom"
+            HorizontalAlignment="Right"
+            Click="NextButton_Clicked">
+            <Button.Resources>
+                <Style TargetType="Border">
+                    <Setter Property="CornerRadius" Value="10"/>
+                </Style>
+            </Button.Resources>
+        </Button>
     </Grid>
 </Window>

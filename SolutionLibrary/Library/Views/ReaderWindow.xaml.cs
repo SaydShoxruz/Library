@@ -14,17 +14,20 @@ namespace Library.Views
     {
         private readonly HttpClient _httpClient;
         private const string URL = "https://freetestapi.com/api/v1/books?search=";
+        public bool signIn;
+        public static Reader Reader;
 
         JsonSerializerOptions jsonSerializerOptions = new JsonSerializerOptions()
         {
             PropertyNamingPolicy = JsonNamingPolicy.SnakeCaseLower
         };
         private List<Book> books;
-        public ReaderWindow()
+        public ReaderWindow(bool isSignIn)
         {
             InitializeComponent();
 
             _httpClient = new HttpClient();
+            signIn = isSignIn;
 
             var storedBooks = BookData.ReadBooksFromFile();
 
@@ -204,12 +207,56 @@ namespace Library.Views
 
         private void AccauntButton_Clicked(object sender, RoutedEventArgs e)
         {
-
+            if (DrawerPanel.Visibility == Visibility.Collapsed)
+            {
+                DrawerPanel.Visibility = Visibility.Visible;
+            }
+            else
+            {
+                DrawerPanel.Visibility = Visibility.Collapsed;
+            }
         }
 
         private void BooksDataGrid_MouseDoubleClick(object sender, MouseButtonEventArgs e)
         {
 
+        }
+
+        private void EditButton_Clicked(object sender, RoutedEventArgs e)
+        {
+
+        }
+
+        private void CheckButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            if (signIn)
+            {
+                ReadersBooksWindow readersBooksWindow = new ReadersBooksWindow(Reader);
+                this.Close();
+
+                readersBooksWindow.Show();
+            }
+            else
+            {
+                var message = MessageBox.Show("Unfortunately, you are not logged in to your account.\n" +
+                                              "Do you want to login or sign in?",
+                                              "Error",
+                                              MessageBoxButton.YesNo,
+                                              MessageBoxImage.Error);
+                if (message == MessageBoxResult.Yes)
+                {
+                    MainWindow mainWindow = new MainWindow();
+                    this.Close();
+                    mainWindow.Show();
+                }
+            }
+        }
+
+        private void LogOutButton_Clicked(object sender, RoutedEventArgs e)
+        {
+            MainWindow mainWindow = new MainWindow();
+            this.Close();
+            mainWindow.Show();
         }
     }
 }
