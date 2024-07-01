@@ -212,7 +212,7 @@
           TextAlignment="Center"
           Padding="6"
           Width="240"
-          Margin="130 5 0 30" TextChanged="addressTextBox_TextChanged">
+          Margin="130 5 0 30">
                 <TextBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
