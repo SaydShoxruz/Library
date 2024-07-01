@@ -110,5 +110,7 @@ namespace Library.Views
         {
             ///botta dilwoda yozgan kodlarini ulab qoyamz
         }
+
+        
     }
 }

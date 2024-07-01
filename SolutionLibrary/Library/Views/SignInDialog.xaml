@@ -45,8 +45,9 @@
                 TextAlignment="Center"
                 Margin="140 -45 0 0"
                 Background="AntiqueWhite"
-                Width="80">
-                <Run FontFamily="Segoe Print" FontSize="13.666666666666666" Text="Sign In"/>
+                Width="80"
+                Text="Sign In"
+                FontSize="18">
 
             </TextBlock>
         </StackPanel>
@@ -60,9 +61,9 @@
             TextAlignment="Center"
             Margin="0 0 250 0"
             Padding="12"
-            FontSize="20"
-            Width="100">
-            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="UserName"/>
+            FontSize="18"
+            Width="100"
+            Text="UserName">
             </TextBlock>
 
         </StackPanel>
@@ -76,9 +77,9 @@
             TextAlignment="Center"
             Margin="0 0 250 0"
             Padding="12"
-            FontSize="20"
-            Width="100">
-            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Password"/>
+            FontSize="18"
+            Width="100"
+            Text="Password">
             </TextBlock>
 
         </StackPanel>
@@ -92,9 +93,9 @@
             TextAlignment="Center"
             Margin="0 0 250 0"
             Padding="12"
-            FontSize="20"
-            Width="100">
-            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="FullName"/>
+            FontSize="18"
+            Width="100"
+            Text="FullName">
             </TextBlock>
 
         </StackPanel>
@@ -109,9 +110,9 @@
                 TextAlignment="Center"
                 Margin="0 0 250 0"
                 Padding="12"
-                FontSize="20"
-                Width="130">
-                <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Phone Number"/>
+                FontSize="18"
+                Width="130"
+                Text="Phone Number">
             </TextBlock>
 
         </StackPanel>
@@ -126,9 +127,9 @@
             TextAlignment="Center"
             Margin="0 0 250 0"
             Padding="12"
-            FontSize="20"
-            Width="100" RenderTransformOrigin="0.528,0.155">
-            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Address"/>
+            FontSize="18"
+            Width="100" RenderTransformOrigin="0.528,0.155"
+            Text="Address">
             </TextBlock>
 
         </StackPanel>
@@ -143,9 +144,9 @@
                 TextAlignment="Center"
                 Margin="0 0 250 0"
                 Padding="12"
-                FontSize="20"
-                Width="100">
-                <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Birthday"/>
+                FontSize="18"
+                Width="100"
+                Text="Birthday">
             </TextBlock>
             
 
@@ -160,7 +161,6 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="16"
-          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
@@ -183,7 +183,6 @@
             Height="40"
             Background="AntiqueWhite"
             FontSize="16"
-            FontFamily="Segoe Print"
             TextAlignment="Center"
             Padding="6"
             Width="240"
@@ -210,11 +209,10 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="16"
-          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
-          Margin="130 5 0 30">
+          Margin="130 5 0 30" TextChanged="addressTextBox_TextChanged">
                 <TextBox.Resources>
                     <Style TargetType="Border">
                         <Setter Property="CornerRadius" Value="20"/>
@@ -253,7 +251,6 @@
           Height="40"
           Background="AntiqueWhite"
           FontSize="16"
-          FontFamily="Segoe Print"
           TextAlignment="Center"
           Padding="6"
           Width="240"
@@ -276,7 +273,6 @@
                 Height="40"
                 Background="AntiqueWhite"
                 FontSize="16"
-                FontFamily="Segoe Print"
                 TextAlignment="Center"
                 Padding="6"
                 Width="240"
@@ -302,9 +298,9 @@
             TextAlignment="Center"
             Margin="0 0 250 0"
             Padding="12"
-            FontSize="20"
-            Width="100" RenderTransformOrigin="0.502,0.524">
-            <Run FontFamily="Segoe Print" FontSize="14.666666666666666" Text="Gender"/>
+            FontSize="18"
+            Width="100" RenderTransformOrigin="0.502,0.524"
+            Text="Gender">
             </TextBlock>
 
         </StackPanel>
@@ -339,7 +335,6 @@
             HorizontalAlignment="Center"
             Height="35"
             Content="Save"
-            TextBlock.FontFamily="Segoe Print"
             FontSize="18"
             Width="120"
             Margin="0 0 0 0"
@@ -358,7 +353,6 @@
             Grid.Row="8"
             Height="35"
             Content="Log In"
-            TextBlock.FontFamily="Segoe Print"
             Width="120"
             FontSize="17"
             Margin="270 0 0 0"
